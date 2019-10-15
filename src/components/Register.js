@@ -1,14 +1,13 @@
 import React from 'react';
-import {MDBContainer, MDBRow, MDBCol, MDBBtn} from 'mdbreact';
 import {Link} from 'react-router-dom'
 
 class Register extends React.Component {
     render() {
         return (
-            <MDBContainer>
-                <MDBRow>
-                    <MDBCol md="3"></MDBCol>
-                    <MDBCol md="6">
+            <div className="container">
+                <div className="row">
+                    <div className="col-3"></div>
+                    <div className="col-6">
                         <form>
                             <h1 className="text-center mb-4">Sign up</h1>
                             <label htmlFor="defaultFormRegisterNameEx" className="grey-text">
@@ -53,16 +52,16 @@ class Register extends React.Component {
                                 className="form-control"
                             />
                             <div className="text-center mt-4">
-                                <MDBBtn className="btn btn-primary" type="submit">Register</MDBBtn>
+                                <button className="btn btn-primary" type="submit">Register</button>
                             </div>
                         </form>
                         <div className="text-center mt-4">
                             <Link to='/'>Sign In</Link>
                         </div>
-                    </MDBCol>
-                    <MDBCol md="3"></MDBCol>
-                </MDBRow>
-            </MDBContainer>
+                    </div>
+                    <div className="col-3"></div>
+                </div>
+            </div>
         );
     };
 }
